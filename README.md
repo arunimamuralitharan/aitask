@@ -111,6 +111,14 @@ The system automatically downloads and processes the SROIE dataset:
 - **Annotations**: Entity-level annotations for vendor, amount, and date
 - **Format**: JSON-based annotation format
 
+### Questions
+
+## Q1: How would you improve accuracy if given more training time?
+I would implement deep learning-based text detection (like EAST or CRAFT) combined with transformer-based NER models to better identify and classify invoice fields, and add data augmentation techniques to handle varied image qualities and orientations.
+
+## Q2: Why is your chosen model suitable for CPU deployment?
+The system uses lightweight traditional computer vision techniques (OpenCV preprocessing) and regex pattern matching rather than GPU-intensive deep learning models, making it efficient for CPU-only environments while maintaining reasonable processing speeds.
+
 
 
 ## Known Issues
